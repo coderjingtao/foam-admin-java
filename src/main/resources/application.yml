@@ -1,0 +1,22 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:mysql://10.1.1.73:3306/taobao_admin?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Australia/Sydney
+    username: fluxadmin
+    password: 8888
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+mybatis-plus:
+  mapper-locations: classpath*:com/joseph/foamadminjava/mapper/**Mapper.xml
+
+
+joseph:
+  jwt:
+    header: Authorization
+    expire: 3600 #1小时，单位:秒
+    secret: ji8n3439n439n43ld9ne9343fdfer49h
